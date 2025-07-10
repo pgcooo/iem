@@ -72,6 +72,21 @@
         /* Language specific classes */
         .lang-ru { display: block; }
         .lang-en { display: none; }
+
+        .number-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem; /* Increased size for number icons */
+            height: 3rem; /* Increased size for number icons */
+            border-radius: 50%;
+            background-color: currentColor; /* Uses the text color of the parent */
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem; /* Increased font size for numbers */
+            margin-right: 0.75rem; /* Adjusted margin for better spacing */
+            flex-shrink: 0; /* Prevent shrinking */
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-4 md:p-8">
@@ -111,15 +126,15 @@
                     </p>
                     <ul class="list-disc list-inside mb-4 pl-4">
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio mr-2 text-blue-600"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48m-8.48 0a6 6 0 0 1 0-8.48m11.31-2.83a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio mr-2 text-blue-600"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48m-8.48 0a6 6 0 0 1 0-8.48m11.31-2.83a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
                             Передатчик: Подключается к микшерному пульту и отправляет аудиосигнал по беспроводной связи.
                         </li>
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-battery-charging mr-2 text-blue-600"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M12 20v-8"/><path d="M9 20v-4"/><path d="M15 20v-6"/><path d="M22 10h-2"/><path d="M22 14h-2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-battery-charging mr-2 text-blue-600"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M12 20v-8"/><path d="M9 20v-4"/><path d="M15 20v-6"/><path d="M22 10h-2"/><path d="M22 14h-2"/></svg>
                             Приемник (бодипак): Небольшое устройство, которое музыкант носит на поясе и принимает беспроводной сигнал.
                         </li>
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones mr-2 text-blue-600"><path d="M18 10c0 7-6 9-6 9s-6-2-6-9V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3z"/><path d="M2 10v2a10 10 0 0 0 10 10V10"/><path d="M22 10v2a10 10 0 0 1-10 10V10"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones mr-2 text-blue-600"><path d="M18 10c0 7-6 9-6 9s-6-2-6-9V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3z"/><path d="M2 10v2a10 10 0 0 0 10 10V10"/><path d="M22 10v2a10 10 0 0 1-10 10V10"/></svg>
                             Наушники-вкладыши: Подключаются к приемнику и вставляются в уши музыканта, обеспечивая персональный, высококачественный звук.
                         </li>
                     </ul>
@@ -146,15 +161,15 @@
                     </p>
                     <ul class="list-disc list-inside mb-4 pl-4">
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio mr-2 text-blue-600"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48m-8.48 0a6 6 0 0 1 0-8.48m11.31-2.83a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio mr-2 text-blue-600"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.48m-8.48 0a6 6 0 0 1 0-8.48m11.31-2.83a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
                             Transmitter: Connects to the mixing console and sends the audio signal wirelessly.
                         </li>
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-battery-charging mr-2 text-blue-600"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M12 20v-8"/><path d="M9 20v-4"/><path d="M15 20v-6"/><path d="M22 10h-2"/><path d="M22 14h-2"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-battery-charging mr-2 text-blue-600"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M12 20v-8"/><path d="M9 20v-4"/><path d="M15 20v-6"/><path d="M22 10h-2"/><path d="M22 14h-2"/></svg>
                             Receiver (bodypack): A small device worn by the musician on their belt that receives the wireless signal.
                         </li>
                         <li class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones mr-2 text-blue-600"><path d="M18 10c0 7-6 9-6 9s-6-2-6-9V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3z"/><path d="M2 10v2a10 10 0 0 0 10 10V10"/><path d="M22 10v2a10 10 0 0 1-10 10V10"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones mr-2 text-blue-600"><path d="M18 10c0 7-6 9-6 9s-6-2-6-9V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3z"/><path d="M2 10v2a10 10 0 0 0 10 10V10"/><path d="M22 10v2a10 10 0 0 1-10 10V10"/></svg>
                             In-Ear Headphones: Connect to the receiver and are inserted into the musician's ears, providing personal, high-quality sound.
                         </li>
                     </ul>
@@ -175,22 +190,30 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://www.acrylicwifi.com/wp-content/uploads/2017/10/Wireless-RF-Spectrum-24GHz-Usage-1200x900.png" alt="Изображение шума и помех" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.1. Плохой, Шумный Звук!</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">1</span> Плохой, Шумный Звук!
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Музыканты в своих наушниках слышат треск, шипение, помехи. Звук грязный, он отвлекает. Это мешает им чисто петь и играть, а также сосредоточиться на поклонении.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://tse1.mm.bing.net/th/id/OIP.4u1JxHlcdHBC9e1lXGzyWQHaDV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Изображение нехватки наушников" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.2. Не Хватает Наушников для Всех!</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">2</span> Не Хватает Наушников для Всех!
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">У нас всего 4 стерео (или 8 моно) комплектов. Когда приходит большая музыкальная группа, многим музыкантам просто не хватает персональных наушников. Им приходится делиться или обходиться без мониторинга.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://www.10kused.com/wp-content/uploads/2024/05/Sennheiser-IEM-EW300-G3-768x768.jpg" alt="Изображение устаревшей технологии" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.3. Устаревшая и Проблемная Система.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">3</span> Устаревшая и Проблемная Система.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Хотя наша старая система Sennheiser G3 поддерживает клик-треки и Talkback, её качество звука оставляет желать лучшего, и она постоянно требует ремонта. Это приводит к частым сбоям и отвлекает от служения.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://th.bing.com/th/id/R.4ae8e779e82e59f67489fe1772c1e109?rik=2SHHr2Q%2fvrTnVQ&riu=http%3a%2f%2fimage.shutterstock.com%2fdisplay_pic_with_logo%2f76219%2f214470535%2fstock-photo-stressed-computer-engineer-working-on-broken-cables-in-his-office-214470535.jpg&ehk=x4fab2BTaFmidhGMcvHTM1WRwPgIHZ0xtnTOmRLCUiM%3d&risl=&pid=ImgRaw&r=0" alt="Изображение недовольного музыканта" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.4. Музыканты Отказываются Ей Пользоваться.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">4</span> Музыканты Отказываются Ей Пользоваться.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Даже наши опытные музыканты не хотят использовать эти мониторы, потому что звук неприятный. Это приводит к напряжению, возможному повреждению слуха и снижению качества выступления.</p>
                 </div>
             </div>
@@ -203,22 +226,30 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://www.acrylicwifi.com/wp-content/uploads/2017/10/Wireless-RF-Spectrum-24GHz-Usage-1200x900.png" alt="Image of noise and interference" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.1. Poor, Noisy Sound!</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">1</span> Poor, Noisy Sound!
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Musicians hear crackling, hissing, and interference in their headphones. The sound is "dirty" and distracting. This prevents them from singing and playing cleanly, and from focusing on worship.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://tse1.mm.bing.net/th/id/OIP.4u1JxHlcdHBC9e1lXGzyWQHaDV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image of headphone scarcity" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.2. Not Enough Headphones for Everyone!</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">2</span> Not Enough Headphones for Everyone!
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">We only have 4 stereo (or 8 mono) sets. When a large music group comes, many musicians simply don't have enough personal headphones. They have to share or go without monitoring.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://www.10kused.com/wp-content/uploads/2024/05/Sennheiser-IEM-EW300-G3-768x768.jpg" alt="Image of outdated technology" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.3. Outdated and Problematic System.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">3</span> Outdated and Problematic System.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">While our old Sennheiser G3 system supports click tracks and Talkback, its sound quality is poor, and it constantly requires repairs. This leads to frequent malfunctions and distracts from ministry.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://th.bing.com/th/id/R.4ae8e779e82e59f67489fe1772c1e109?rik=2SHHr2Q%2fvrTnVQ&riu=http%3a%2f%2fimage.shutterstock.com%2fdisplay_pic_with_logo%2f76219%2f214470535%2fstock-photo-stressed-computer-engineer-working-on-broken-cables-in-his-office-214470535.jpg&ehk=x4fab2BTaFmidhGMcvHTM1WRwPgIHZ0xtnTOmRLCUiM%3d&risl=&pid=ImgRaw&r=0" alt="Image of frustrated musician" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.4. Musicians Refuse to Use It.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700 flex items-center">
+                        <span class="number-icon" style="background-color: #dc2626;">4</span> Musicians Refuse to Use It.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Even our experienced musicians do not want to use these monitors because the sound is "unpleasant." This leads to tension, potential hearing damage, and a decrease in performance quality.</p>
                 </div>
             </div>
@@ -280,27 +311,37 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://cdn.uc.assets.prezly.com/6239cd44-338c-49b4-886f-f5ba659f0ae8/SPECTERA_Base_Station_Front_On.jpg" alt="Sennheiser Spectera Base Station" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.1. Кристально Чистый Цифровой Звук (Без Шумов!)</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">1</span> Кристально Чистый Цифровой Звук (Без Шумов!)
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Больше никакого треска, шипения или помех. Музыканты будут слышать идеально чистый, прозрачный звук, как в студии. Это позволит им петь и играть с максимальной отдачей.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://www.sennheiser.com/cdn-cgi/image/width=1920,format=avif,quality=75/globalassets/digizuite/48049-en-spectera_sek_1g4_product_shot_cutout_front_view.png/SennheiserFullWidth" alt="Sennheiser Spectera SEK Bodypack" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.2. Много Каналов и Двусторонняя Связь (10 Стерео Комплектов)</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">2</span> Много Каналов и Двусторонняя Связь (10 Стерео Комплектов)
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">У нас будет 10 полноценных стерео наушников (паков). Каждый пак (Spectera SEK) умеет одновременно передавать сигнал от микрофона/инструмента и принимать звук для ушей! Хватает на всех, и мы контролируем каждый пак удаленно.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://cinevo.com/wp-content/uploads/2022/08/prod_1140_1.jpg" alt="Мониторинг и связь" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.3. Готовы к Любым Современным Группам.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">3</span> Готовы к Любым Современным Группам.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Мы легко сможем использовать клик-треки (метроном) и систему Talkback для мгновенной связи между музыкантами и звукорежиссером. Это делает наше выступление очень слаженным и профессиональным.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://live.staticflickr.com/65535/54065352268_ef74f15f38_n.jpg" alt="Защита слуха" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.4. Защита Слуха и Комфорт Музыкантов.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">4</span> Защита Слуха и Комфорт Музыкантов.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Музыканты будут слышать все идеально прямо в ушах, при этом общая громкость на сцене снижается. Это защищает их слух, что очень важно для наших волонтеров.</p>
                 </div>
                 <div class="flex flex-col items-center text-center md:col-span-2 p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://static.wixstatic.com/media/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg" alt="Будущее технологий" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300 max-w-md">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.5. Инвестиция в Будущее (Надежность на Годы!)</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">5</span> Инвестиция в Будущее (Надежность на Годы!)
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">Spectera – это новейшая технология Sennheiser. Она будет актуальна и надежна очень долго (минимум 10 лет и более). Это капитальная инвестиция, которая избавит нас от постоянных проблем и ремонтов старой системы.</p>
                 </div>
             </div>
@@ -314,28 +355,38 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://cdn.uc.assets.prezly.com/6239cd44-338c-49b4-886f-f5ba659f0ae8/SPECTERA_Base_Station_Front_On.jpg" alt="Sennheiser Spectera Base Station" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.1. Crystal Clear Digital Sound (No Noise!)</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">1</span> Crystal Clear Digital Sound (No Noise!)
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">No more crackling, hissing, or interference. Musicians will hear perfectly clean, transparent sound, just like in a studio. This will allow them to sing and play with maximum dedication.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://www.sennheiser.com/cdn-cgi/image/width=1920,format=avif,quality=75/globalassets/digizuite/48049-en-spectera_sek_1g4_product_shot_cutout_front_view.png/SennheiserFullWidth" alt="Sennheiser Spectera SEK Bodypack" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.2. Many Channels and Two-Way Communication (10 Stereo Sets)</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">2</span> Many Channels and Two-Way Communication (10 Stereo Sets)
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">We will have 10 full stereo "headphones" (packs). Each pack (Spectera SEK) can simultaneously transmit a signal from a microphone/instrument AND receive sound for the ears! Enough for everyone, and we control each pack remotely.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
                     <img src="https://cinevo.com/wp-content/uploads/2022/08/prod_1140_1.jpg" alt="Monitoring and communication" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.3. Ready for Any Modern Bands.</h3>
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">3</span> Ready for Any Modern Bands.
+                    </h3>
                     <p class="text-gray-700 leading-relaxed">We can easily use click tracks (metronome) and a Talkback system for instant communication between musicians and the sound engineer. This makes our performance very cohesive and professional.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
-                    <img src="https://live.staticflickr.com/65535/54065352268_ef74f15f38_n.jpg" alt="Защита слуха" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.4. Защита Слуха и Комфорт Музыкантов.</h3>
-                    <p class="text-gray-700 leading-relaxed">Музыканты будут слышать все идеально прямо в ушах, при этом общая громкость на сцене снижается. Это защищает их слух, что очень важно для наших волонтеров.</p>
+                    <img src="https://live.staticflickr.com/65535/54065352268_ef74f15f38_n.jpg" alt="Hearing protection" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">4</span> Hearing Protection and Musician Comfort.
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">Musicians will hear everything perfectly directly in their ears, while the overall stage volume is reduced. This protects their hearing, which is very important for our volunteers.</p>
                 </div>
                 <div class="flex flex-col items-center text-center md:col-span-2 p-4 bg-blue-50 rounded-lg shadow-sm border">
-                    <img src="https://static.wixstatic.com/media/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg" alt="Будущее технологий" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300 max-w-md">
-                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.5. Инвестиция в Будущее (Надежность на Годы!)</h3>
-                    <p class="text-gray-700 leading-relaxed">Spectera – это новейшая технология Sennheiser. Она будет актуальна и надежна очень долго (минимум 10 лет и более). Это капитальная инвестиция, которая избавит нас от постоянных проблем и ремонтов старой системы.</p>
+                    <img src="https://static.wixstatic.com/media/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg" alt="Future technology" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300 max-w-md">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700 flex items-center">
+                        <span class="number-icon" style="background-color: #2563eb;">5</span> Investment in the Future (Reliability for Years!)
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed">Spectera is Sennheiser's latest technology. It will remain relevant and reliable for a very long time (at least 10 years and more). This is a capital investment that will free us from constant problems and repairs of the old system.</p>
                 </div>
             </div>
         </section>
@@ -350,14 +401,13 @@
                 <div class="text-gray-700">
                     <h3 class="text-2xl font-semibold mb-3">Что Входит в Эту Цену ($30,000):</h3>
                     <ul class="list-disc list-inside space-y-2 text-lg">
-                        <li>1 Центральная Станция Spectera (Базовая Станция): Это мозг всей системы. Сама по себе она стоит от $10,000 до $18,000.</li>
-                        <li>10 Двунаправленных Паков Spectera SEK: Каждый такой пак, который и передает, и принимает звук, стоит от $2,000 до $3,700. Только эти 10 паков – это уже $20,000 - $37,000.</li>
-                        <li>Специальные Антенны Spectera DAD: Для надежной работы нужны особые цифровые антенны (от $1,600 каждая, нужно минимум две).</li>
-                        <li>Аккумуляторы и Зарядные Устройства: Профессиональные батареи и станции для их зарядки.</li>
-                        <li>Качественные Наушники-Вкладыши: Чтобы насладиться идеальным звуком Spectera, нужны хорошие наушники-вкладыши (могут стоить от $200 до $1000+ за пару).</li>
-                        <li>Установка и Настройка: Профессиональное оборудование требует профессиональной установки и тонкой настройки для безупречной работы.</li>
+                        <li>Центральная Станция Spectera (Базовая Станция): Мозг всей системы ($10,000 - $18,000).</li>
+                        <li>10 Двунаправленных Паков Spectera SEK: Передают и принимают звук ($2,000 - $3,700 каждый).</li>
+                        <li>Специальные Антенны Spectera DAD: Для надежной работы (от $1,600 каждая, нужно минимум две).</li>
+                        <li>Аккумуляторы и Зарядные Устройства: Профессиональные батареи и станции.</li>
+                        <li>Установка и Настройка: Профессиональное оборудование требует экспертной установки и настройки.</li>
                     </ul>
-                    <p class="mt-6 font-semibold text-xl leading-relaxed">Это Долгосрочная Инвестиция: Мы покупаем систему, которая будет служить нам много лет. Это как построить крепкое здание – один раз вложились, и оно стоит десятилетиями.</p>
+                    <p class="mt-6 font-semibold text-xl leading-relaxed">Это Долгосрочная Инвестиция: Система будет служить нам много лет, обеспечивая стабильность и качество.</p>
                 </div>
             </div>
         </section>
@@ -372,14 +422,13 @@
                 <div class="text-gray-700">
                     <h3 class="text-2xl font-semibold mb-3">What's Included in This Price ($30,000):</h3>
                     <ul class="list-disc list-inside space-y-2 text-lg">
-                        <li>1 Spectera Central Station (Base Station): This is the "brain" of the entire system. It alone costs between $10,000 and $18,000.</li>
-                        <li>10 Bi-directional Spectera SEK Packs: Each such pack, which both transmits and receives sound, costs between $2,000 and $3,700. These 10 packs alone are already $20,000 - $37,000.</li>
-                        <li>Special Spectera DAD Antennas: For reliable operation, special digital antennas are needed (from $1,600 each, at least two are required).</li>
+                        <li>Spectera Central Station (Base Station): The brain of the entire system ($10,000 - $18,000).</li>
+                        <li>10 Bi-directional Spectera SEK Packs: Transmit and receive sound ($2,000 - $3,700 each).</li>
+                        <li>Special Spectera DAD Antennas: For reliable operation (from $1,600 each, at least two are required).</li>
                         <li>Batteries and Chargers: Professional batteries and charging stations.</li>
-                        <li>High-Quality In-Ear Headphones: To enjoy the ideal Spectera sound, good in-ear headphones are needed (can cost from $200 to $1000+ per pair).</li>
-                        <li>Installation and Setup: Professional equipment requires professional installation and fine-tuning for flawless operation.</li>
+                        <li>Installation and Setup: Professional equipment requires expert installation and fine-tuning.</li>
                     </ul>
-                    <p class="mt-6 font-semibold text-xl leading-relaxed">This is a Long-Term Investment: We are purchasing a system that will serve us for many years. It's like building a strong building – you invest once, and it stands for decades.</p>
+                    <p class="mt-6 font-semibold text-xl leading-relaxed">This is a Long-Term Investment: The system will serve us for many years, ensuring stability and quality.</p>
                 </div>
             </div>
         </section>
@@ -559,4 +608,3 @@
     </script>
 </body>
 </html>
-
