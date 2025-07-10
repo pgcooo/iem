@@ -6,11 +6,11 @@
     <title>Обновление Звука для Поклонения: Sennheiser Spectera</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
             background-color: #f8fafc; /* Very light background */
             color: #1e293b; /* Dark text for contrast */
         }
@@ -68,21 +68,38 @@
         .text-gray-400 { color: #64748b; } /* Slightly lighter gray */
         .text-gray-500 { color: #64748b; } /* Standard gray for footer */
         .text-gray-700 { color: #1e293b; } /* Darkest gray for primary content */
+
+        /* Language specific classes */
+        .lang-ru { display: block; }
+        .lang-en { display: none; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center p-4 md:p-8">
 
-    <!-- Header Section -->
-    <header class="header-bg w-full max-w-5xl text-gray-700 text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">НОВЫЙ ЗВУК ДЛЯ ПОКЛОНЕНИЯ: <br class="hidden md:inline">SENNHEISER SPECTERA!</h1>
-        <p class="text-lg md:text-2xl mb-8 font-light">Наша цель – дать музыкантам услышать поклонение ясно, без помех, и служить Богу на высшем уровне!</p>
+    <!-- Language Switcher -->
+    <div class="w-full max-w-5xl flex justify-end mb-4">
+        <button id="lang-ru-btn" class="px-4 py-2 mr-2 rounded-md bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">Русский</button>
+        <button id="lang-en-btn" class="px-4 py-2 rounded-md bg-gray-200 text-gray-700 font-semibold shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75">English</button>
+    </div>
+
+    <!-- Header Section (Russian) -->
+    <header class="header-bg w-full max-w-5xl text-gray-700 text-center lang-ru">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Обновление старой беспроводной системы In-Ear Monitor</h1>
+        <p class="text-lg md:text-2xl mb-8 font-light">Sennheiser G3 &rarr; Sennheiser Spectera: Преимущества и Стоимость</p>
+        <img src="https://www.turramusic.com.au/cdn/shop/articles/spectera-7.jpg?v=1726186468" alt="Sennheiser Spectera equipment on stage" class="w-full h-auto rounded-md shadow-lg mx-auto border-4 border-gray-200">
+    </header>
+
+    <!-- Header Section (English) -->
+    <header class="header-bg w-full max-w-5xl text-gray-700 text-center lang-en">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Updating Old Wireless In-Ear Monitor System</h1>
+        <p class="text-lg md:text-2xl mb-8 font-light">Sennheiser G3 &rarr; Sennheiser Spectera: Benefits and Cost</p>
         <img src="https://www.turramusic.com.au/cdn/shop/articles/spectera-7.jpg?v=1726186468" alt="Sennheiser Spectera equipment on stage" class="w-full h-auto rounded-md shadow-lg mx-auto border-4 border-gray-200">
     </header>
 
     <main class="w-full max-w-5xl mt-8">
 
-        <!-- Introduction to Wireless IEMs Section -->
-        <section class="section-container">
+        <!-- Introduction to Wireless IEMs Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">Что Такое Беспроводные IEM?</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                 <div class="md:w-1/2 text-gray-700 leading-relaxed">
@@ -107,8 +124,34 @@
             </div>
         </section>
 
-        <!-- Problems Section -->
-        <section class="section-container">
+        <!-- Introduction to Wireless IEMs Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">What Are Wireless IEMs?</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="md:w-1/2 text-gray-700 leading-relaxed">
+                    <p class="mb-4">
+                        Wireless In-Ear Monitor (IEM) systems are personal monitoring systems that allow musicians and vocalists to hear themselves and the mix of the entire performance directly in their ears through special in-ear headphones. Unlike traditional floor monitors (speakers on stage), IEMs provide a clean, isolated sound without external noise or interference.
+                    </p>
+                    <p class="mb-4">
+                        The system consists of three main parts:
+                    </p>
+                    <ul class="list-disc list-inside mb-4 pl-4">
+                        <li>**Transmitter:** Connects to the mixing console and sends the audio signal wirelessly.</li>
+                        <li>**Receiver (bodypack):** A small device worn by the musician on their belt. It receives the wireless signal.</li>
+                        <li>**In-Ear Headphones:** Connect to the receiver and are inserted into the musician's ears, providing a personal, high-quality sound.</li>
+                    </ul>
+                    <p>
+                        The main advantage of IEMs is the ability for each performer to get their own, individually tailored mix, which improves performance accuracy, protects hearing, and reduces overall stage volume. Musicians and singers typically purchase their own in-ear headphones (IEMs), as they are a personal item for hygiene and comfort, but the system (transmitters and receivers) is provided by the church.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20220121/pngtree-angry-guy-hates-loud-neighbors-sound-system-confident-advertising-face-photo-image_43900268.jpg" alt="Musician with in-ear headphones" class="w-full h-auto rounded-md shadow-lg border-4 border-blue-100">
+                </div>
+            </div>
+        </section>
+
+        <!-- Problems Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-red-600">Наши Старые Проблемы (Sennheiser G3): В Чем Проблема?</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -124,8 +167,8 @@
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://www.10kused.com/wp-content/uploads/2024/05/Sennheiser-IEM-EW300-G3-768x768.jpg" alt="Изображение устаревшей технологии" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
-                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.3. Устарела для Современных Групп.</h3>
-                    <p class="text-gray-700 leading-relaxed">Сегодняшние музыканты используют клик-треки (метроном) и Talkback (связь). Наша старая система этого не умеет. Это ограничивает наше музыкальное служение и возможности.</p>
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.3. Устаревшая и Проблемная Система.</h3>
+                    <p class="text-gray-700 leading-relaxed">Хотя наша старая система Sennheiser G3 поддерживает клик-треки и Talkback, её качество звука оставляет желать лучшего, и она постоянно требует ремонта. Это приводит к частым сбоям и отвлекает от служения.</p>
                 </div>
                 <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
                     <img src="https://th.bing.com/th/id/R.4ae8e779e82e59f67489fe1772c1e109?rik=2SHHr2Q%2fvrTnVQ&riu=http%3a%2f%2fimage.shutterstock.com%2fdisplay_pic_with_logo%2f76219%2f214470535%2fstock-photo-stressed-computer-engineer-working-on-broken-cables-in-his-office-214470535.jpg&ehk=x4fab2BTaFmidhGMcvHTM1WRwPgIHZ0xtnTOmRLCUiM%3d&risl=&pid=ImgRaw&r=0" alt="Изображение недовольного музыканта" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
@@ -135,8 +178,36 @@
             </div>
         </section>
 
-        <!-- Key Statistics Section -->
-        <section class="section-container">
+        <!-- Problems Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-red-600">Our Old Problems (Sennheiser G3): What's the Issue?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
+                    <img src="https://www.acrylicwifi.com/wp-content/uploads/2017/10/Wireless-RF-Spectrum-24GHz-Usage-1200x900.png" alt="Image of noise and interference" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.1. Poor, Noisy Sound!</h3>
+                    <p class="text-gray-700 leading-relaxed">Musicians hear crackling, hissing, and interference in their headphones. The sound is "dirty" and distracting. This prevents them from singing and playing cleanly, and from focusing on worship.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.4u1JxHlcdHBC9e1lXGzyWQHaDV?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image of headphone scarcity" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.2. Not Enough Headphones for Everyone!</h3>
+                    <p class="text-gray-700 leading-relaxed">We only have 4 stereo (or 8 mono) sets. When a large music group comes, many musicians simply don't have enough personal headphones. They have to share or go without monitoring.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
+                    <img src="https://www.10kused.com/wp-content/uploads/2024/05/Sennheiser-IEM-EW300-G3-768x768.jpg" alt="Image of outdated technology" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.3. Outdated and Problematic System.</h3>
+                    <p class="text-gray-700 leading-relaxed">While our old Sennheiser G3 system supports click tracks and Talkback, its sound quality is poor, and it constantly requires repairs. This leads to frequent malfunctions and distracts from ministry.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-red-50 rounded-lg shadow-sm border">
+                    <img src="https://th.bing.com/th/id/R.4ae8e779e82e59f67489fe1772c1e109?rik=2SHHr2Q%2fvrTnVQ&riu=http%3a%2f%2fimage.shutterstock.com%2fdisplay_pic_with_logo%2f76219%2f214470535%2fstock-photo-stressed-computer-engineer-working-on-broken-cables-in-his-office-214470535.jpg&ehk=x4fab2BTaFmidhGMcvHTM1WRwPgIHZ0xtnTOmRLCUiM%3d&risl=&pid=ImgRaw&r=0" alt="Image of frustrated musician" class="w-full h-48 object-cover rounded-md mb-4 border border-red-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">1.4. Musicians Refuse to Use It.</h3>
+                    <p class="text-gray-700 leading-relaxed">Even our experienced musicians do not want to use these monitors because the sound is "unpleasant." This leads to tension, potential hearing damage, and a decrease in performance quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Statistics Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">Ключевые Статистические Данные</h2>
             <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Взгляните на основные показатели, которые подчеркивают преимущества новой системы.</p>
 
@@ -159,8 +230,32 @@
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="section-container">
+        <!-- Key Statistics Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">Key Statistics</h2>
+            <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Take a look at the key indicators that highlight the advantages of the new system.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-blue-50 rounded-lg shadow-sm border border-blue-300">
+                    <p class="text-5xl font-bold text-blue-700 mb-2">4 &rarr; 10</p>
+                    <p class="text-lg text-gray-700">Stereo Channels</p>
+                    <p class="text-sm text-gray-500">(Old system &rarr; New system)</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-lg shadow-sm border border-green-300">
+                    <p class="text-5xl font-bold text-green-700 mb-2">10+</p>
+                    <p class="text-lg text-gray-700">Years of Reliable Operation</p>
+                    <p class="text-sm text-gray-500">(Expected lifespan of the new system)</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-lg shadow-sm border border-purple-300">
+                    <p class="text-5xl font-bold text-purple-700 mb-2">~$30,000</p>
+                    <p class="text-lg text-gray-700">Total Investment</p>
+                    <p class="text-sm text-gray-500">(Approximate cost of the new system)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">Новая Система: Sennheiser Spectera – Что Она Даст?</h2>
             <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Это не просто обновление, это самая современная профессиональная система в мире.</p>
 
@@ -193,8 +288,42 @@
             </div>
         </section>
 
-        <!-- Investment Section -->
-        <section class="section-container">
+        <!-- Solution Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-blue-600">New System: Sennheiser Spectera – What Will It Provide?</h2>
+            <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">This is not just an upgrade; it's the most modern professional system in the world.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
+                    <img src="https://cdn.uc.assets.prezly.com/6239cd44-338c-49b4-886f-f5ba659f0ae8/SPECTERA_Base_Station_Front_On.jpg" alt="Sennheiser Spectera Base Station" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.1. Crystal Clear Digital Sound (No Noise!)</h3>
+                    <p class="text-gray-700 leading-relaxed">No more crackling, hissing, or interference. Musicians will hear perfectly clean, transparent sound, just like in a studio. This will allow them to sing and play with maximum dedication.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
+                    <img src="https://www.sennheiser.com/cdn-cgi/image/width=1920,format=avif,quality=75/globalassets/digizuite/48049-en-spectera_sek_1g4_product_shot_cutout_front_view.png/SennheiserFullWidth" alt="Sennheiser Spectera SEK Bodypack" class="w-full h-48 object-contain rounded-md mb-4 border border-blue-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.2. Many Channels and Two-Way Communication (10 Stereo Sets)</h3>
+                    <p class="text-gray-700 leading-relaxed">We will have 10 full stereo "headphones" (packs). Each pack (Spectera SEK) can simultaneously transmit a signal from a microphone/instrument AND receive sound for the ears! Enough for everyone, and we control each pack remotely.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
+                    <img src="https://cinevo.com/wp-content/uploads/2022/08/prod_1140_1.jpg" alt="Monitoring and communication" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.3. Ready for Any Modern Bands.</h3>
+                    <p class="text-gray-700 leading-relaxed">We can easily use click tracks (metronome) and a Talkback system for instant communication between musicians and the sound engineer. This makes our performance very cohesive and professional.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-4 bg-blue-50 rounded-lg shadow-sm border">
+                    <img src="https://live.staticflickr.com/65535/54065352268_ef74f15f38_n.jpg" alt="Hearing protection" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.4. Hearing Protection and Musician Comfort.</h3>
+                    <p class="text-gray-700 leading-relaxed">Musicians will hear everything perfectly directly in their ears, while the overall stage volume is reduced. This protects their hearing, which is very important for our volunteers.</p>
+                </div>
+                <div class="flex flex-col items-center text-center md:col-span-2 p-4 bg-blue-50 rounded-lg shadow-sm border">
+                    <img src="https://static.wixstatic.com/media/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/f3ebbf_c2bb272045e14d8a93605d39190aad08~mv2.jpg" alt="Future technology" class="w-full h-48 object-cover rounded-md mb-4 border border-blue-300 max-w-md">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">2.5. Investment in the Future (Reliability for Years!)</h3>
+                    <p class="text-gray-700 leading-relaxed">Spectera is Sennheiser's latest technology. It will remain relevant and reliable for a very long time (at least 10 years or more). This is a capital investment that will free us from constant problems and repairs of the old system.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-green-600">Почему $30,000? (Это Инвестиция, а Не Расход!)</h2>
             <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Spectera – это Профессиональное Решение Высшего Уровня. Это не просто наушники, это полноценная цифровая система, которая гарантирует стабильность и качество.</p>
 
@@ -215,8 +344,30 @@
             </div>
         </section>
 
-        <!-- Supplier Quotes Section -->
-        <section class="section-container">
+        <!-- Investment Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-green-600">Why $30,000? (It's an Investment, Not an Expense!)</h2>
+            <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Spectera is a Professional, Top-Tier Solution. It's not just "headphones"; it's a complete digital system that guarantees stability and quality.</p>
+
+            <div class="flex flex-col md:flex-row items-center justify-center mb-6 p-4 bg-green-50 rounded-lg shadow-sm border">
+                <img src="https://cdn.uc.assets.prezly.com/02632c2f-39f1-4323-a4df-dff3ae7d5f9d/Spectera_Product_Shot_In_Use_Max_Herre_Joy_Denalane_19.jpg" alt="Image of investment and growth" class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md mb-4 md:mb-0 md:mr-6 border border-green-300">
+                <div class="text-gray-700">
+                    <h3 class="text-2xl font-semibold mb-3">What's Included in This Price ($30,000):</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li>1 Spectera Central Station (Base Station): This is the "brain" of the entire system. It alone costs between $10,000 and $18,000.</li>
+                        <li>10 Bi-directional Spectera SEK Packs: Each such pack, which both transmits and receives sound, costs between $2,000 and $3,700. These 10 packs alone are already $20,000 - $37,000.</li>
+                        <li>Special Spectera DAD Antennas: For reliable operation, special digital antennas are needed (from $1,600 each, at least two are required).</li>
+                        <li>Batteries and Chargers: Professional batteries and charging stations.</li>
+                        <li>High-Quality In-Ear Headphones: To enjoy the ideal Spectera sound, good in-ear headphones are needed (can cost from $200 to $1000+ per pair).</li>
+                        <li>Installation and Setup: Professional equipment requires professional installation and fine-tuning for flawless operation.</li>
+                    </ul>
+                    <p class="mt-6 font-semibold text-xl leading-relaxed">This is a Long-Term Investment: We are purchasing a system that will serve us for many years. It's like building a strong building – you invest once, and it stands for decades.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supplier Quotes Section (Russian) -->
+        <section class="section-container lang-ru">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-600">Предложения от Поставщиков</h2>
             <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">Мы получили предложения от ведущих поставщиков, подтверждающие стоимость и комплектацию системы:</p>
 
@@ -278,13 +429,115 @@
             </div>
         </section>
 
+        <!-- Supplier Quotes Section (English) -->
+        <section class="section-container lang-en">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-600">Supplier Quotes</h2>
+            <p class="text-lg md:text-xl mb-8 text-center text-gray-700 font-light">We have received proposals from leading suppliers confirming the cost and configuration of the system:</p>
+
+            <!-- Quote 1: PRO SOUND & LIGHTING -->
+            <div class="quote-card">
+                <div class="flex items-center mb-4">
+                    <img src="https://prosoundonline.com/wp-content/uploads/MainLogo_WHTonBLK.png" alt="PRO SOUND & LIGHTING Logo" class="rounded-full mr-4 shadow-md w-20 h-20 object-contain bg-white p-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-700">PRO SOUND & LIGHTING</h3>
+                        <p class="text-gray-400 text-sm">Proposal No. 273959</p>
+                    </div>
+                </div>
+                <ul class="list-disc list-inside mb-4 text-gray-700 text-lg">
+                    <li>8 Sennheiser SPECTERA-SEK (Bi-directional bodypack)</li>
+                    <li>2 Sennheiser SPECTERA-DAD (Bi-directional digital antenna)</li>
+                    <li>1 Sennheiser SPECTERA-BASE (Base station)</li>
+                    <li>8 Sennheiser BA70 (Rechargeable batteries)</li>
+                </ul>
+                <p class="text-xl font-bold text-right text-purple-800">TOTAL: $27,681.00</p>
+            </div>
+
+            <!-- Quote 2: AVTRADE (Sennheiser Option) -->
+            <div class="quote-card">
+                <div class="flex items-center mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_HwYekJFTat7Et95aUfr_1wlYSBB-8OEIA&s" alt="AVTRADE Logo" class="rounded-full mr-4 shadow-md w-20 h-20 object-contain bg-white p-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-700">AVTRADE</h3>
+                        <p class="text-gray-400 text-sm">Proposal No. P-311 (Sennheiser Option)</p>
+                    </div>
+                </div>
+                <ul class="list-disc list-inside mb-4 text-gray-700 text-lg">
+                    <li>1 Sennheiser SPECTERA BASE STATION</li>
+                    <li>8 Sennheiser SPECTERA SEK (UHF) (Bi-directional bodypack)</li>
+                    <li>8 Sennheiser SENN-BA-70 (Rechargeable battery)</li>
+                    <li>3 Sennheiser CHG 70N-C + PSU KIT (Mains charger)</li>
+                    <li>1 Sennheiser SPECTERA DAD (UHF) (Bi-directional digital antenna module)</li>
+                </ul>
+                <p class="text-xl font-bold text-right text-purple-800">TOTAL: $29,186.00</p>
+            </div>
+
+            <!-- Quote 3: Sweetwater -->
+            <div class="quote-card">
+                <div class="flex items-center mb-4">
+                    <img src="https://media.sweetwater.com/m/logo/sweetwater-tagline-1200x630.jpg?optimize=medium&auto=webp" alt="Sweetwater Logo" class="rounded-full mr-4 shadow-md w-20 h-20 object-contain bg-white p-2">
+                    <div>
+                        <h3 class="text-2xl font-bold text-purple-700">Sweetwater</h3>
+                        <p class="text-gray-400 text-sm">Proposal No. 10865585</p>
+                    </div>
+                </div>
+                <ul class="list-disc list-inside mb-4 text-gray-700 text-lg">
+                    <li>1 Sennheiser Spectera Base Station</li>
+                    <li>10 Sennheiser Spectera SEK (UHF)</li>
+                    <li>2 Sennheiser Spectera DAD (UHF)</li>
+                    <li>5 Sennheiser EWD-BA70 Charging System</li>
+                    <li>2 Pro Co 100' Shld Cat5e Cable RJ45 Snagless</li>
+                    <li>1 Pro Co 10' Shld Cat5e Cable RJ45 Snagless</li>
+                </ul>
+                <p class="text-xl font-bold text-right text-purple-800">TOTAL: $29,973.72</p>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full max-w-5xl text-center text-gray-500 text-sm mt-10 p-6 border-t border-gray-200">
+    <!-- Footer (Russian) -->
+    <footer class="w-full max-w-5xl text-center text-gray-500 text-sm mt-10 p-6 border-t border-gray-200 lang-ru">
         <p>&copy; 2025 Церковь Славянского Евангелия Суламита. Все права защищены.</p>
         <p class="mt-2">Для вопросов: [Ваш Контакт]</p>
     </footer>
 
+    <!-- Footer (English) -->
+    <footer class="w-full max-w-5xl text-center text-gray-500 text-sm mt-10 p-6 border-t border-gray-200 lang-en">
+        <p>&copy; 2025 Slavic Evangelical Church Sulamita. All rights reserved.</p>
+        <p class="mt-2">For inquiries: [Your Contact]</p>
+    </footer>
+
+    <script>
+        // Function to set the language
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang-ru').forEach(el => {
+                el.style.display = (lang === 'ru') ? 'block' : 'none';
+            });
+            document.querySelectorAll('.lang-en').forEach(el => {
+                el.style.display = (lang === 'en') ? 'block' : 'none';
+            });
+
+            // Update button styles
+            if (lang === 'ru') {
+                document.getElementById('lang-ru-btn').classList.add('bg-blue-600', 'text-white');
+                document.getElementById('lang-ru-btn').classList.remove('bg-gray-200', 'text-gray-700');
+                document.getElementById('lang-en-btn').classList.add('bg-gray-200', 'text-gray-700');
+                document.getElementById('lang-en-btn').classList.remove('bg-blue-600', 'text-white');
+            } else {
+                document.getElementById('lang-en-btn').classList.add('bg-blue-600', 'text-white');
+                document.getElementById('lang-en-btn').classList.remove('bg-gray-200', 'text-gray-700');
+                document.getElementById('lang-ru-btn').classList.add('bg-gray-200', 'text-gray-700');
+                document.getElementById('lang-ru-btn').classList.remove('bg-blue-600', 'text-white');
+            }
+        }
+
+        // Add event listeners to buttons
+        document.getElementById('lang-ru-btn').addEventListener('click', () => setLanguage('ru'));
+        document.getElementById('lang-en-btn').addEventListener('click', () => setLanguage('en'));
+
+        // Set default language on load (e.g., Russian)
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('ru'); // Default to Russian
+        });
+    </script>
 </body>
 </html>
